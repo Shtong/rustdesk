@@ -1,52 +1,66 @@
 <p align="center">
-  <img src="logo-header.svg" alt="RustDesk - Your remote desktop"><br>
-  <a href="#serveurs-publics-libres">Serveurs</a> -
-  <a href="#étapes-brutes-de-la-compilationbuild">Build</a> -
-  <a href="#comment-construire-avec-docker">Docker</a> -
-  <a href="#structure-du-projet">Structure</a> -
-  <a href="#images">Images</a><br>
-  [<a href="README-ZH.md">中文</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>]<br>
-  <b>Nous avons besoin de votre aide pour traduire ce README dans votre langue maternelle</b>.
+  <img src="logo-header.svg" alt="RustDesk - Votre bureau à distance"><br>
+  <a href="#serveurs-publics-gratuits">Serveurs</a> •
+  <a href="#étapes-générales-pour-la-compilation">Compilation</a> •
+  <a href="#comment-compiler-avec-docker">Docker</a> •
+  <a href="#structure-de-fichiers">Structure</a> •
+  <a href="#captures">Captures d'écran</a><br>
+  [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>]<br>
+  <b>Nous avons besoin de votre aide pour traduire ce README, <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">RustDesk UI</a> et <a href="https://github.com/rustdesk/doc.rustdesk.com">la documentation</a> en Français.</b>
 </p>
 
-Chattez avec nous : [Discord](https://discord.gg/nDceKgxnkV) | [Reddit](https://www.reddit.com/r/rustdesk)
+Rejoignez la discussion : [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
+
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Encore un autre logiciel de bureau à distance, écrit en Rust. Fonctionne directement, aucune configuration n'est nécessaire. Vous avez le contrôle total de vos données, sans aucun souci de sécurité. Vous pouvez utiliser notre serveur de rendez-vous/relais, [configurer le vôtre](https://rustdesk.com/server), ou [écrire votre propre serveur de rendez-vous/relais](https://github.com/rustdesk/rustdesk-server-demo).
+Encore un logiciel de bureau à distance, écrit en Rust. Prêt à fonctionner, sans configuration requise. Vous gardez le contrôle complet de vos données, sans avoir à vous soucier de sécurité. Vous pouvez utiliser nos serveurs de contact/relais, [installer votre serveur personnel](https://rustdesk.com/server), ou [écrire votre propre serveur](https://github.com/rustdesk/rustdesk-server-demo).
 
-RustDesk accueille les contributions de tout le monde. Voir [`CONTRIBUTING.md`](CONTRIBUTING.md) pour plus d'informations.
+![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
-[**TÉLÉCHARGEMENT BINAIRE**](https://github.com/rustdesk/rustdesk/releases)
+## Restez au courant
 
-## Serveurs publics libres
+<p align="center"><img src="https://github.com/AppFlowy-IO/appflowy/blob/main/doc/imgs/howtostar.gif" alt="AppFlowy Github" width="1000px" /></p>
 
-Ci-dessous se trouvent les serveurs que vous utilisez gratuitement, cela peut changer au fil du temps. Si vous n'êtes pas proche de l'un d'entre eux, votre réseau peut être lent.
+RustDesk accepte toutes les contributions. Consultez [`CONTRIBUTING.md`](CONTRIBUTING.md) pour savoir comment participer.
 
-- Séoul, AWS lightsail, 1 VCPU/0.5G RAM
-- Singapour, Vultr, 1 VCPU/1G RAM
-- Dallas, Vultr, 1 VCPU/1G RAM
+[**Comment fonctionne RustDesk ?**](https://github.com/rustdesk/rustdesk/wiki/How-does-RustDesk-work%3F)
+
+[**TÉLÉCHARGEMENTS BINAIRES**](https://github.com/rustdesk/rustdesk/releases)
+
+## Serveurs publics gratuits
+
+Les serveurs listés ci-dessous peuvent être utilisés gratuitement. Cette liste peut varier dans le temps. Si vous n'êtes pas situés près d'un d'eux, la connetion pourrait être plus lente.
+| Emplacement | Fournisseur | Caractéristiques |
+| --------- | ------------- | ------------------ |
+| Séoul | AWS lightsail | 1 VCPU / 0.5GB RAM |
+| Singapour | Vultr | 1 VCPU / 1GB RAM |
+| Dallas | Vultr | 1 VCPU / 1GB RAM | |
 
 ## Dépendances
 
-Les versions de bureau utilisent [sciter](https://sciter.com/) pour l'interface graphique, veuillez télécharger la bibliothèque dynamique sciter vous-même.
+Les versions de bureau utilisent [sciter](https://sciter.com/) pour l'interface, merci de télécharger la bibliothèque dynamique sciter par vos propres moyens.
 
 [Windows](https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.win/x64/sciter.dll) |
-[Linux](https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so)
-[macOS](https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.osx/libsciter.dylib)
+[Linux](https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so) |
+[MacOS](https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.osx/libsciter.dylib)
 
-## Étapes brutes de la compilation/build
+Les versions mobiles utilisent Flutter. Nous avons prévu d'abandonner Sciter au profit de Flutter dans le futur pour les versions bureau.
 
-- Préparez votre environnement de développement Rust et votre environnement de compilation C++.
+## Étapes générales pour la compilation
 
-- Installez [vcpkg](https://github.com/microsoft/vcpkg), et définissez correctement la variable d'environnement `VCPKG_ROOT`.
+- Préparez votre environnement de développement Rust, et votre environnement de compilation C++
 
-  - Windows : vcpkg install libvpx:x64-windows-static libyuv:x64-windows-static opus:x64-windows-static
-  - Linux/Osx : vcpkg install libvpx libyuv opus
+- Installez [vcpkg](https://github.com/microsoft/vcpkg), et définissez correctement la variable `VCPKG_ROOT`
 
-- Exécuter `cargo run`
+  - Windows: vcpkg install libvpx:x64-windows-static libyuv:x64-windows-static opus:x64-windows-static
+  - Linux/MacOS: vcpkg install libvpx libyuv opus
 
-## Comment compiler/build sous Linux
+- Lancez `cargo run`
+
+## [Compilation](https://rustdesk.com/docs/en/dev/build/)
+
+## Comment compiler sous Linux
 
 ### Ubuntu 18 (Debian 10)
 
@@ -66,6 +80,12 @@ sudo yum -y install gcc-c++ git curl wget nasm yasm gcc gtk3-devel clang libxcb-
 sudo pacman -Syu --needed unzip git cmake gcc curl wget yasm nasm zip make pkg-config clang gtk3 xdotool libxcb libxfixes alsa-lib pulseaudio
 ```
 
+### Installer la dépendance pynput
+
+```sh
+pip3 install pynput
+```
+
 ### Installer vcpkg
 
 ```sh
@@ -78,7 +98,7 @@ export VCPKG_ROOT=$HOME/vcpkg
 vcpkg/vcpkg install libvpx libyuv opus
 ```
 
-### Corriger libvpx (Pour Fedora)
+### Corriger libvpx (pour Fedora)
 
 ```sh
 cd vcpkg/buildtrees/libvpx/src
@@ -91,26 +111,26 @@ cp libvpx.a $HOME/vcpkg/installed/x64-linux/lib/
 cd
 ```
 
-### Construire
+### Compiler
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 git clone https://github.com/rustdesk/rustdesk
 cd rustdesk
-mkdir -p cible/debug
+mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
 mv libsciter-gtk.so target/debug
-Exécution du cargo
+VCPKG_ROOT=$HOME/vcpkg cargo run
 ```
 
-### Changer Wayland en X11 (Xorg)
+### Remplacer Wayland par X11 (Xorg)
 
-RustDesk ne supporte pas Wayland. Lisez [cela](https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/) pour configurer Xorg comme la session GNOME par défaut.
+RustDesk ne supporte pas Wayland. Consultez [ceci](https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg-as-default-gnome-session/) pour faire de XORG votre session GNOME par défaut.
 
-## Comment construire avec Docker
+## Comment compiler avec Docker
 
-Commencez par cloner le dépôt et construire le conteneur Docker :
+Commencez par cloner le repository et compiler le conteneur docker :
 
 ```sh
 git clone https://github.com/rustdesk/rustdesk
@@ -118,38 +138,40 @@ cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
 
-Ensuite, chaque fois que vous devez compiler le logiciel, exécutez la commande suivante :
+Ensuite, à chaque fois que vous avez besoin de compiler l'application, utilisez la commande suivante :
 
 ```sh
 docker run --rm -it -v $PWD:/home/user/rustdesk -v rustdesk-git-cache:/home/user/.cargo/git -v rustdesk-registry-cache:/home/user/.cargo/registry -e PUID="$(id -u)" -e PGID="$(id -g)" rustdesk-builder
 ```
 
-Notez que la première compilation peut prendre plus de temps avant que les dépendances ne soient mises en cache, les compilations suivantes seront plus rapides. De plus, si vous devez spécifier différents arguments à la commande de compilation, vous pouvez le faire à la fin de la commande à la position `<OPTIONAL-ARGS>`. Par exemple, si vous voulez compiler une version de release optimisée, vous devez exécuter la commande ci-dessus suivie de `--release`. L'exécutable résultant sera disponible dans le dossier cible sur votre système, et peut être lancé avec :
+Notez que la première compilation peut prendre plus de temps pour la mise en cache des dépendances, et que que les compilations suivantes devraient être plus rapides. De plus, si vous avez besoin de spécifier d'autres arguments à la commande de compilation, vous pouvez le faire à la fin de la commande à l'emplacement des `<OPTIONAL-ARGS>`. Par exemple, pour compiler une version optimisée pour la production, on aurait exécuté la commande ci-dessus suivie de `--release`. L'exécutable généré sera disponible dans le répertoire target de votre système, et pourra être exécuté avec :
 
 ```sh
 target/debug/rustdesk
 ```
 
-Ou, si vous exécutez un exécutable provenant d'une release :
+Ou, pour démarrer un exécutable de production :
 
 ```sh
 target/release/rustdesk
 ```
 
-Veuillez vous assurer que vous exécutez ces commandes à partir de la racine du dépôt RustDesk, sinon l'application ne pourra pas trouver les ressources requises. Notez également que les autres sous-commandes de cargo telles que `install` ou `run` ne sont pas actuellement supportées par cette méthode car elles installeraient ou exécuteraient le programme à l'intérieur du conteneur au lieu de l'hôte.
+Assurez-vous de bien exécuter toutes ces commandes depuis la racine du repository RustDesk, ou l'application pourrait ne pas être capable de trouver les ressources nécessaires. Notez aussi que les sous-commandes cargo, comme `install` ou `run` ne sont pour l'instant pas supportées avec cette méthode, car elles installeraient ou démarreraient l'application dans le conteneur plutôt que dans l'hôte.
 
-## Structure du projet
+## Structure de fichiers
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)** : codec vidéo, config, wrapper tcp/udp, protobuf, fonctions fs pour le transfert de fichiers, et quelques autres fonctions utilitaires.
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)** : capture d'écran
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)** : contrôle clavier/souris spécifique à la plate-forme
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)** : interface graphique
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)** : services audio/clipboard/input/vidéo, et connexions réseau
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)** : démarrer une connexion entre pairs
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)** : Communiquer avec [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attendre une connexion distante directe (TCP hole punching) ou relayée.
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)** : code spécifique à la plateforme
+- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: codec vidéo, configuration, wrapper tcp/udp, protobuf, fonctions fs pour les transferts de fichiers, et quelques autres fonctions utilitaires
+- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: capture d'écrans
+- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: contrôle de clavier/souris pour chaque plateforme
+- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: services audio/presse papier/entrées/vidéo, et connexions réseau
+- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: démarre une connexion à un pair
+- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Communique avec [rustdesk-server](https://github.com/rustdesk/rustdesk-server), et attends les connections directes (TCP hole punching) ou relayées
+- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: code spécifique à chaque plate-forme
+- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: code Flutter pour mobile
+- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: code Javascript pour le client web Flutter
 
-## Images
+## Captures
 
 ![image](https://user-images.githubusercontent.com/71636191/113112362-ae4deb80-923b-11eb-957d-ff88daad4f06.png)
 
